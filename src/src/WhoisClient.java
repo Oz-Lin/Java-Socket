@@ -1,17 +1,24 @@
 import java.net.*;
 import java.io.*;
+import java.util.Scanner;
 
 /**
  * This program demonstrates a client socket application that connects
  * to a Whois server to get information about a domain name.
- * @author www.codejava.net
+ * https://www.codejava.net/java-se/networking/java-socket-client-examples-tcp-ip
  */
 public class WhoisClient {
 
     public static void main(String[] args) {
-        if (args.length < 1) return;
+        String domainName;
 
-        String domainName = args[0];
+        if (args.length < 1) {
+            System.out.print("Enter a domain name: ");
+            Scanner scanner = new Scanner(System.in);
+            domainName = scanner.nextLine();
+        } else {
+            domainName = args[0];
+        }
 
         String hostname = "whois.internic.net";
         int port = 43;
