@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-Socket.iml" filepath="$PROJECT_DIR$/.idea/Java-Socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServerClient/ServerClient.iml" filepath="$PROJECT_DIR$/ServerClient/ServerClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/src.iml" filepath="$PROJECT_DIR$/src/src.iml" />
     </modules>
   </component>
